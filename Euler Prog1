@@ -1,0 +1,19 @@
+using System;
+
+namespace First { 
+class Programm
+    {
+        public static void Main(string[] args)
+        {
+            int mult = 0;
+            for (int i = 1; i < 1000; i++)
+            {
+                if (i % 3 == 0 || i % 5 == 0)
+                {
+                    mult = mult + i;
+                }
+            }
+            Console.WriteLine(mult);
+        }     
+        }
+}
