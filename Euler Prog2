@@ -1,0 +1,25 @@
+using System;
+namespace Prog2
+{
+class Program2
+{
+    static void Main(string[] args)
+    {
+            int n = 1;
+            int k = 2;
+            int m = 4000000;
+            int s = 2;
+            for(;k<m || n<m;)
+            {
+                k = k + n;
+                n = k - n;
+                if (k % 2 == 0 )
+                {
+                    s = s + k;
+                    ;
+                }
+            }
+            Console.WriteLine(s);
+    }
+}
+}
