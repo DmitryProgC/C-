@@ -1,0 +1,28 @@
+using System;
+ 
+namespace HelloWorld
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = Convert.ToInt32(Console.ReadLine());
+            while (n > 0 )
+            {
+                string word = Console.ReadLine();
+                if (word.Length <= 10)
+                Console.WriteLine(word);
+                else
+                {
+                    string word1 = word.Substring(1, word.Length - 2);
+                    int len = word1.Length;
+                    string First = word[0].ToString();
+                    string Last = word[word.Length - 1].ToString();
+                    string word2 = First + len + Last;
+                    Console.WriteLine(word2);
+                };
+                n--;
+            }
+        }
+    }
+}
