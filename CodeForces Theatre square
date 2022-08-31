@@ -1,0 +1,34 @@
+using System;
+namespace teatre_square
+{
+    class program
+{
+    static void Main(string[] args)
+    {
+            string s = Console.ReadLine();
+            string[] square = s.Split(' ');
+           
+            int n = Convert.ToInt32(square[0]);
+            int m = Convert.ToInt32(square[1]);
+            int a = Convert.ToInt32(square[2]);
+            int k;
+            double l;
+            double f;
+ 
+            k = m / a;
+            if (m % a > 0)
+            { 
+                k++;
+            }
+            l = n / a;
+            if (n % a > 0)
+            {
+                l++;
+            }
+ 
+            f = k * l;
+            Console.WriteLine(Convert.ToDecimal(f));
+ 
+    }
+}
+}
